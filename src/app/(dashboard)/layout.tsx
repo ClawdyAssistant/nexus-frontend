@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { Sidebar } from '@/components/layout/sidebar';
 import { Navbar } from '@/components/layout/navbar';
+import { AskNexusChatbot } from '@/components/ai/ask-nexus-chatbot';
 
 export default function DashboardLayout({
   children,
@@ -49,6 +50,9 @@ export default function DashboardLayout({
           {children}
         </main>
       </div>
+
+      {/* AI Chatbot */}
+      <AskNexusChatbot />
     </div>
   );
 }
